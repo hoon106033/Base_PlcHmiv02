@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL_HMI" Id="{63f0d02c-1b01-4db9-be78-8ef1bee4583f}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+	
+	iSelectProductNo	: UINT; // Select Product No.
+	bSaveProductData	: BOOL;
+	bDeleteProductData	: BOOL;
+	bDeleteRecipeData	: BOOL;
+	bRemoveProductData	: BOOL;
+	
+// Main
+	bBtAutoMode			: BOOL;
+	bBtStart			: BOOL;
+	bBtStop				: BOOL;
+	bBtHome				: BOOL;
+	bBtDoorLock			: BOOL;
+	bBtDoorUnlock		: BOOL;
+	bBtAlarmReset		: BOOL;
+	bLpBlink			: BOOL;
+	bLpHome				: BOOL;
+	bLpAlarmReset		: BOOL;
+	bLpAutoMode			: BOOL;
+	bLpStart			: BOOL;
+	
+// Index
+	iTextIndex			: INT;	// By 'TextList' 0= Manual, 1= Auto
+	iMainFrame			: INT; // 0= Main, 1= Manual, 2= Setting, 3= Model, 4= Data, 5= Alarm
+
+// Frame Number
+    bMainScreen			: BOOL;
+    bManualScreen		: BOOL;
+	bSettingScreen		: BOOL;
+	bModelScreen		: BOOL;
+	bDataScreen			: BOOL;
+	bAlarmScreen		: BOOL;
+	
+// Message Box
+	sCurrentTitle		: STRING;
+	sCurrentMessage		: STRING;
+	bCallMessageBox		: BOOL;
+
+// Time
+	abStartTimeStamp	: ARRAY[0..cMaxStationNo-1] OF BOOL;
+	abEndTimeStamp		: ARRAY[0..cMaxStationNo-1] OF BOOL;
+	sCurrentTime		: STRING;
+
+// Model
+	iInputModelNo		: INT;
+	bBtSaveModelData	: BOOL;
+	bLpSaveModelData	: BOOL;
+	bBtActivateModel	: BOOL;
+	bLpActivateModel	: BOOL;
+	bLpDiffNumber		: BOOL;
+	bLpDiffName			: BOOL;
+	bLpDiffbType		: BOOL;
+	bLpDiffiType		: BOOL;
+	bLpDiffrPosition	: BOOL;
+	bLpDiffrSpeed		: BOOL;
+	bLpDiffBtSave		: BOOL;
+	iModelIndex			: INT;
+
+// Test Bt
+	bTest				: BOOL;
+END_VAR
+
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="DUT_ProductData" Id="{a6fc6eba-a208-4794-ad2d-59e47322d0a7}">
+    <Declaration><![CDATA[TYPE DUT_ProductData :
+STRUCT
+	sName				:STRING;				(*Product Name*)
+	iType				:INT;					(*Product Name*)
+	tCycleTime			:TIME;					(*Product Name*)
+	tProcessTime		:TIME;					(*Product Name*)
+	dtStartTime 		:DT;					(*Product Name*)
+	dtEndTime			:DT;					(*Product Name*)
+	iRecipeNo			:INT;					(*Product Name*)
+	iInputCount			:INT;
+	abInspectResult1		:BOOL;	// True = Pass (OK)
+	aiInspectResultCode1	:INT;	// 0 = Pending (not inspected yet), 1 = Pass (OK), 2 = Fail – Reason #1, 3 = Fail – Reason #2
+	abInspectResult2		:BOOL;	// True = Pass (OK)
+	aiInspectResultCode2	:INT;	// 0 = Pending (not inspected yet), 1 = Pass (OK), 2 = Fail – Reason #1, 3 = Fail – Reason #2
+	abInspectResult3		:BOOL;	// True = Pass (OK)
+	aiInspectResultCode3	:INT;	// 0 = Pending (not inspected yet), 1 = Pass (OK), 2 = Fail – Reason #1, 3 = Fail – Reason #2
+	abInspectResult4		:BOOL;	// True = Pass (OK)
+	aiInspectResultCode4	:INT;	// 0 = Pending (not inspected yet), 1 = Pass (OK), 2 = Fail – Reason #1, 3 = Fail – Reason #2
+	abInspectResult5		:BOOL;	// True = Pass (OK)
+	aiInspectResultCode5	:INT;	// 0 = Pending (not inspected yet), 1 = Pass (OK), 2 = Fail – Reason #1, 3 = Fail – Reason #2
+	abInspectResult6		:BOOL;	// True = Pass (OK)
+	aiInspectResultCode6	:INT;	// 0 = Pending (not inspected yet), 1 = Pass (OK), 2 = Fail – Reason #1, 3 = Fail – Reason #2
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

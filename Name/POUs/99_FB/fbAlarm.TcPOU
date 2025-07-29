@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="fbAlarm" Id="{9dcec5a4-6c18-4a10-b966-05119cece86c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK fbAlarm	// 
+VAR_INPUT
+	bSelectWarning	: BOOL;
+	tDelayTime	: TIME;
+	bCommand	: BOOL;
+	bAlarmCondition	: BOOL;
+	iAlarmCode	: INT;
+	iPriority	: INT;
+	sAlarmMessage	: STRING;
+	sLocation	: STRING;
+END_VAR
+VAR_OUTPUT
+	bError	: BOOL;
+	bWarning	: BOOL;
+END_VAR
+VAR
+	bAlarm	: BOOL;
+	triAlarm	: R_Trig;
+	triWarning	: R_Trig;
+	triError	: R_Trig;
+	i: INT;
+	stAlarmInfo	: Dut_AlarmInfo;
+	tonDelayTimer	: ton;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+// Alarm Input
+	bAlarm	:= bCommand AND bAlarmCondition;
+	tonDelayTimer(in := bAlarm, pt :=tDelayTime);
+
+// Alarm History
+	triAlarm(clk := tonDelayTimer.Q);
+	IF triAlarm.Q THEN
+		FOR i := cMaxAlarmLogCount TO 1 BY -1 DO
+			astAlarmHistory[i]	:= astAlarmHistory[i-1];
+		END_FOR
+		stAlarmInfo.iAlarmCode	:= iAlarmCode;
+		stAlarmInfo.iPriority	:= iPriority;
+		stAlarmInfo.sAlarmMessage	:= sAlarmMessage;
+		stAlarmInfo.sLocation	:= sLocation;
+		stAlarmInfo.tTimeStamp	:= SYSTEMTIME_TO_DT(GVL_Status.fbLocalTime.systemTime);
+		astAlarmHistory[0] := stAlarmInfo;
+	END_IF
+
+// Alarm Output
+	IF tonDelayTimer.Q THEN
+		bError := NOT bSelectWarning;
+		gvl_status.bAlarm := NOT bSelectWarning;
+		bWarning := bSelectWarning;
+		gvl_status.bWarning := bSelectWarning;
+	END_IF
+	
+// Alarm Reset
+	IF bAlarmReset THEN
+		bError := FALSE;
+		bWarning := FALSE;
+		gvl_status.bAlarm := FALSE;
+		gvl_status.bWarning := FALSE;
+	END_IF
+	
+// Call Message Box
+	triWarning(clk := gvl_status.bWarning);
+	IF triWarning.Q THEN
+		sCurrentTitle	:= astAlarmHistory[0].sLocation;
+		sCurrentMessage	:= astAlarmHistory[0].sAlarmMessage;
+		bCallMessageBox := gvl_status.bWarning;
+	END_IF
+	
+// Change Main Frame to Alarm
+	triError(clk := gvl_status.bAlarm);
+	IF triError.Q THEN
+		iMainFrame := 5;
+	END_IF
+	]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL_Retain" Id="{26ff8b77-4fcf-4393-8b92-2db0ff69307d}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+  {attribute 'TcPersistent'}
+VAR_GLOBAL
+//Product Data
+	astProductData 		: ARRAY[0..cMaxStationNo+1] OF DUT_ProductData;
+	abMoveShift			: ARRAY[0..cMaxStationNo] OF BOOL;
+
+// Alarm
+	astAlarmHistory		: ARRAY[0..cMaxAlarmLogCount-1] OF DUT_AlarmInfo; // 최근 100개 알람 저장
+
+// Model
+	astInputModel		: ARRAY[1..cMaxModelNo] OF dut_ModelInfo;
+	astModel			: ARRAY[1..cMaxModelNo] OF dut_ModelInfo;
+	stCurrnetModel		: dut_ModelInfo;	
+END_VAR
+
+VAR_GLOBAL CONSTANT
+	cMaxAlarmLogCount	: INT := 100; 
+	cMaxStationNo 		: INT := 30;
+	cMaxTypeNo			: INT := 20;
+	cMaxPositionNo		: INT := 30;
+	cMaxModelNo			: INT := 10;
+	cMaxStationAlarmNo	: INT := 100;
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

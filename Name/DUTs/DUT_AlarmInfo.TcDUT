@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="DUT_AlarmInfo" Id="{486a9c71-71d8-486d-a84c-dd368d72da64}">
+    <Declaration><![CDATA[TYPE DUT_AlarmInfo :
+STRUCT
+	bActive			: BOOL;              // 알람 활성 여부 (발생 중인지)
+	iAlarmCode		: INT;               // 알람 코드 (번호)
+	sAlarmMessage	: STRING(255);       // 알람 메시지 텍스트
+	tTimeStamp		: DT;                // 알람 발생 시간
+	sLocation		: STRING(50);         // 알람 발생 위치 (설비명 등)
+	iPriority		: INT;               // 우선순위 (1:높음, 2:중간, 3:낮음 등)
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

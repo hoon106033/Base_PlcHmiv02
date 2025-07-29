@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="Station1" Id="{689f4e9b-42c0-4037-a3cd-3420e210bd57}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Station1
+VAR
+	abSt1Error	: ARRAY[1..cMaxStationAlarmNo] OF BOOL;
+	abSt1Warning	: ARRAY[1..cMaxStationAlarmNo] OF BOOL;
+	abSt1SelectWarning	: ARRAY[1..cMaxStationAlarmNo] OF BOOL;
+	sTest	: string;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Alarm
+ sTest := St1AlarmList();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="DUT_ModelInfo" Id="{e045def9-7134-4c9c-a39f-98f9b517554b}">
+    <Declaration><![CDATA[TYPE DUT_ModelInfo :
+STRUCT
+	iNumber		: INT;
+	sName		: STRING;
+	abType		: ARRAY[1..cMaxTypeNo] OF BOOL;
+	aiType		: ARRAY[1..cMaxTypeNo] OF INT;
+	arPosition	: ARRAY[1..cMaxPositionNo] OF LREAL;
+	arSpeed		: ARRAY[1..cMaxPositionNo] OF LREAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

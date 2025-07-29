@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="HMI" Id="{9c9fc534-b4ef-4436-908f-05d0c4acc2cc}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM HMI
+VAR
+	tonBlink : ton;
+	tonAlarmReset : ton;
+	Test: fbAlarm;
+	bTest1: BOOL;
+	Test1: fbAlarm;
+	bTest2: BOOL;
+	i	: INT;
+	iDiffReset: INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Current Time
+	GVL_HMI.sCurrentTime := SYSTEMTIME_TO_STRING( GVL_Status.fbLocalTime.systemTime);
+
+// Select Auto Mode
+	IF GVL_Status.bAutoCmd = FALSE AND GVL_Status.bAutoBusy = FALSE AND GVL_Status.bManualBusy = FALSE AND GVL_Status.bHomeBusy = FALSE  THEN
+		//Turn On Auto Mode 
+        IF GVL_HMI.bBtAutoMode = TRUE AND GVL_Status.bAutoMode = FALSE AND GVL_Status.bSafetyDoorLocked THEN
+			GVL_Status.bAutoMode := TRUE;
+			GVL_HMI.bBtAutoMode := FALSE;
+		END_IF
+		//Turn Off Auto Mode
+		IF GVL_HMI.bBtAutoMode = TRUE AND GVL_Status.bAutoMode = TRUE  THEN
+			GVL_Status.bAutoMode := FALSE;
+			GVL_HMI.bBtAutoMode := FALSE;
+		END_IF
+	ELSE
+		GVL_HMI.bBtAutoMode := FALSE;
+	END_IF
+		
+        IF GVL_Status.bSafetyDoorUnlocked OR (NOT bDoorUnlockCmd AND NOT bDoorLockCmd)  THEN
+		GVL_HMI.bBtAutoMode := FALSE;
+	END_IF
+	
+	gvl_hmi.bLpAutoMode := GVL_Status.bAutoMode OR ( GVL_HMI.bLpBlink AND GVL_Status.bHomeComplete AND GVL_Status.bHomeMode);
+	
+// Select Manual Mode
+	IF GVL_Status.bAutoMode = FALSE THEN
+		GVL_Status.bManualMode := TRUE;
+		GVL_HMI.iTextIndex := 0;
+	ELSE
+		GVL_Status.bManualMode := FALSE;
+		GVL_HMI.iTextIndex := 1;
+	END_IF
+	
+// Auto Running
+	IF GVL_HMI.bBtStart = TRUE AND GVL_Status.bAutoMode = TRUE AND GVL_Status.bHomeComplete = TRUE AND GVL_Status.bAutoBusy = FALSE AND GVL_Status.bManualBusy = FALSE AND GVL_Status.bHomeBusy = FALSE THEN
+		GVL_Status.bAutoCmd := TRUE;
+		GVL_HMI.bBtStart := FALSE;
+	ELSIF GVL_HMI.bBtStart = TRUE AND GVL_Status.bAutoMode = FALSE THEN
+		GVL_HMI.bBtStart := FALSE;
+	END_IF
+	
+	gvl_hmi.bLpStart := GVL_Status.bAutoCmd OR ( GVL_HMI.bLpBlink AND GVL_Status.bHomeComplete AND GVL_Status.bAutoMode AND ( NOT gvl_status.bAlarm AND NOT gvl_status.bWarning));
+	
+	
+// Stop 
+	IF GVL_HMI.bBtStop = TRUE AND GVL_Status.bStopCmd = FALSE THEN
+		GVL_Status.bStopCmd	:= TRUE;
+		GVL_HMI.bBtStop := FALSE;
+	END_IF
+	
+	IF GVL_Status.bStopCmd = TRUE AND GVL_Status.bAutoBusy = FALSE AND GVL_Status.bManualBusy = FALSE AND GVL_Status.bHomeBusy = FALSE THEN
+		GVL_Status.bAutoCmd := FALSE;
+		GVL_Status.bHomeCmd := FALSE;
+		GVL_Status.bStopCmd := FALSE;
+		GVL_HMI.bBtStop := FALSE;
+	END_IF
+	
+// Home 
+	GVL_Status.bHomeMode := GVL_Status.bSafetyDoorLocked AND GVL_Status.bManualMode;
+	
+	IF GVL_HMI.bBtHome = TRUE AND GVL_Status.bHomeMode = TRUE AND GVL_Status.bAutoBusy = FALSE AND GVL_Status.bManualBusy = FALSE AND GVL_Status.bHomeBusy = FALSE AND GVL_Status.bAutoCmd = FALSE THEN
+		GVL_Status.bHomeCmd := TRUE;
+		GVL_HMI.bBtHome := FALSE;
+	ELSIF GVL_HMI.bBtHome = TRUE AND GVL_Status.bHomeMode = FALSE THEN
+		GVL_HMI.bBtHome := FALSE;
+	END_IF
+	
+	IF GVL_Status.bHomeCmd = TRUE AND GVL_Status.bHomeComplete = TRUE THEN
+		GVL_Status.bHomeCmd := FALSE;
+	END_IF
+	
+	// bHomeComplete Reset
+		IF GVL_Status.bSafetyDoorUnlocked THEN
+			GVL_Status.bHomeComplete := FALSE;
+		END_IF
+	
+		GVL_HMI.bLpHome := GVL_Status.bHomeComplete OR ( NOT GVL_Status.bHomeComplete AND GVL_Status.bHomeMode AND GVL_HMI.bLpBlink);
+	
+// Door Unlock
+	IF GVL_HMI.bBtDoorUnlock AND GVL_Status.bManualMode AND NOT GVL_Status.bManualBusy THEN
+		GVL_Status.bDoorUnlockCmd := TRUE;
+		GVL_Status.bDoorLockCmd := FALSE;
+		GVL_HMI.bBtDoorUnlock := FALSE;
+	ELSE
+		GVL_HMI.bBtDoorUnlock := FALSE;
+	END_IF
+	
+// Door Lock
+	IF GVL_HMI.bBtDoorLock AND GVL_Status.bManualMode AND NOT GVL_Status.bManualBusy THEN
+		GVL_Status.bDoorLockCmd := TRUE;
+		GVL_Status.bDoorUnlockCmd := FALSE;
+		GVL_HMI.bBtDoorLock := FALSE;
+	ELSE
+		GVL_HMI.bBtDoorLock := FALSE;
+	END_IF
+	
+// Alarm Reset
+	IF gvl_hmi.bBtAlarmReset THEN
+		GVL_Status.bAlarmReset := TRUE;
+		gvl_hmi.bBtAlarmReset := FALSE;
+	END_IF
+	
+	tonAlarmReset(in := GVL_Status.bAlarmReset, pt := T#0.5S);
+	
+	IF tonAlarmReset.Q THEN
+		GVL_Status.bAlarmReset := FALSE;
+	END_IF
+	
+	gvl_hmi.bLpAlarmReset := GVL_Status.bAlarmReset OR (GVL_HMI.bLpBlink AND (gvl_status.bAlarm OR gvl_status.bWarning));
+		
+// blink
+ 	tonBlink(in := NOT tonBlink.q , PT := T#500MS);
+	
+	IF tonBlink.Q THEN
+		GVL_HMI.bLpBlink := NOT GVL_HMI.bLpBlink;
+	END_IF
+	
+// Current Screen
+	gvl_hmi.bMainScreen := gvl_hmi.iMainFrame = 0;
+	gvl_hmi.bManualScreen := gvl_hmi.iMainFrame = 1;
+	gvl_hmi.bSettingScreen := gvl_hmi.iMainFrame = 2;
+	gvl_hmi.bModelScreen := gvl_hmi.iMainFrame = 3;
+	gvl_hmi.bDataScreen := gvl_hmi.iMainFrame = 4;
+	gvl_hmi.bAlarmScreen := gvl_hmi.iMainFrame = 5;
+	
+	
+// Model
+	 IF bModelScreen THEN
+		 FOR i := 1 TO cMaxModelNo DO
+			astInputModel[i].iNumber := i;
+			IF bBtSaveModelData THEN
+				astModel[iModelindex] := astInputModel[iModelindex];
+			END_IF
+			IF bBtActivateModel THEN
+				 stCurrnetModel := astModel[iModelindex];
+			END_IF
+		 END_FOR
+		 iModelindex := LIMIT(1,iModelindex,cMaxModelNo);
+		 bLpDiffNumber := astInputModel[iModelindex].iNumber <> astModel[iModelindex].iNumber;
+		 bLpDiffName := astInputModel[iModelindex].sName <> astModel[iModelindex].sName;
+		 FOR i := 1 TO cMaxTypeNo DO
+			 IF astInputModel[iModelindex].abType[i] <> astModel[iModelindex].abType[i] THEN
+			 bLpDiffbType := TRUE;
+			 END_IF
+		 END_FOR
+		 FOR i := 1 TO cMaxTypeNo DO
+			 IF astInputModel[iModelindex].aiType[i] <> astModel[iModelindex].aiType[i] THEN
+			 bLpDiffiType := TRUE;
+			 END_IF
+		 END_FOR
+		 FOR i := 1 TO cMaxPositionNo DO
+			 IF astInputModel[iModelindex].arPosition[i] <> astModel[iModelindex].arPosition[i] THEN
+			 bLpDiffrPosition := TRUE;
+			 END_IF
+		 END_FOR
+		 FOR i := 1 TO cMaxPositionNo DO
+			 IF astInputModel[iModelindex].arSpeed[i] <> astModel[iModelindex].arSpeed[i] THEN
+			 bLpDiffrSpeed := TRUE;
+			 END_IF
+		 END_FOR		
+		 IF (iModelindex <> iDiffReset) OR bBtSaveModelData THEN
+			 bLpDiffbType := FALSE;
+			 bLpDiffiType := FALSE;
+			 bLpDiffrPosition := FALSE;
+			 bLpDiffrSpeed := FALSE;
+			 iDiffReset := iModelindex;
+		 END_IF
+		 bLpDiffBtSave := bBtSaveModelData OR ((bLpDiffNumber OR bLpDiffName OR bLpDiffbType OR bLpDiffiType OR bLpDiffrPosition OR bLpDiffrSpeed) AND bLpBlink);
+	 END_IF
+	 
+	 ]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

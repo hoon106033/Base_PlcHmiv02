@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="Test" Id="{9e153451-b72e-4319-94b9-29f82d1be8cc}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Test
+VAR
+
+	fbTestAlarm1: fbalarm;
+
+        bTestSelectWarning: BOOL;
+        bTestAlarmCondition: BOOL;
+	bTestError1: BOOL;
+	bTestWarning1: BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Door		
+	GVL_Status.bSafetyDoorLocked := GVL_Status.bDoorLockCmd;
+	GVL_Status.bSafetyDoorUnlocked := GVL_Status.bDoorUnlockCmd;
+	
+// home
+	IF GVL_Status.bHomeCmd THEN
+		GVL_Status.bHomeComplete := TRUE;
+	END_IF
+
+
+
+// Alarm
+	fbTestAlarm1(
+        bSelectWarning:= bTestSelectWarning,
+	tDelayTime:= T#1S, 
+	bCommand:= TRUE, 
+        bAlarmCondition:= bTestAlarmCondition,
+	iAlarmCode:= 1, 
+	iPriority:= 1, 
+	sAlarmMessage:= 'hello', 
+	sLocation:= 'office', 
+	bError=> bTestError1, 
+	bWarning=> bTestWarning1);
+	
+
+
+	
+	
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL_Status" Id="{440f4b84-02a7-472b-a9fb-345c38aad752}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+	//DataShift
+		fbLocalTime 		: FB_LocalSystemTime;
+		
+	//Status
+		bAutoMode				:BOOL;
+		bManualMode				:BOOL;
+		bHomeMode				:BOOL;
+		bAutoBusy				:BOOL;
+		bHomeBusy				:BOOL;
+		bManualBusy				:BOOL;
+		bAlarm					:BOOL;
+		bWarning				:BOOL;
+		bHomeComplete			:BOOL;
+		bSafetyDoorLocked		:BOOL;
+		bSafetyDoorUnlocked		:BOOL;
+		bAlarmReset				: BOOL;
+		
+	//Command
+		bStopCmd		:BOOL;
+		bAutoCmd		:BOOL;
+		bHomeCmd		:BOOL;
+		bDoorUnlockCmd	:BOOL;
+		bDoorLockCmd	:BOOL;
+		
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
