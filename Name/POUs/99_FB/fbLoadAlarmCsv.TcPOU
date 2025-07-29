@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="fbLoadAlarmCsv" Id="{3a35026b-1ce4-47c5-901e-a46bde8109be}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK fbLoadAlarmCsv
+VAR_INPUT
+    bExecute  : BOOL;
+    sFileName : STRING := 'CSV.csv';
+END_VAR
+VAR_OUTPUT
+    bBusy   : BOOL;
+    bError  : BOOL;
+END_VAR
+VAR
+    hFile        : UDINT;
+    fbOpen       : SysFile.SysFileOpen;
+    fbRead       : SysFile.SysFileRead;
+    fbClose      : SysFile.SysFileClose;
+    sLine        : STRING(255);
+    nBytesRead   : UDINT;
+    nStep        : INT := 0;
+    nIndex       : INT := 1;
+    pos1, pos2   : INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+CASE nStep OF
+0:
+    IF bExecute THEN
+        fbOpen(sFile := sFileName, nMode := SysFile.MODEREAD);
+        hFile := fbOpen.hFile;
+        IF fbOpen.nErrId = 0 THEN
+            bBusy := TRUE;
+            nStep := 1;
+        ELSE
+            bError := TRUE;
+            nStep := 100;
+        END_IF
+    END_IF
+1:
+    fbRead(hFile := hFile, pData := ADR(sLine), cbLen := SIZEOF(sLine), cbRead := nBytesRead);
+    IF fbRead.nErrId <> 0 THEN
+        bError := TRUE;
+        nStep := 3;
+    ELSIF nBytesRead = 0 THEN
+        nStep := 2;
+    ELSE
+        sLine[nBytesRead] := 0; // terminate
+        pos1 := FIND(',', sLine);
+        pos2 := FIND(',', sLine, pos1 + 1);
+        IF pos1 > 0 AND pos2 > 0 THEN
+            GVL_AlarmList.aiAlarmCode[nIndex] := STRING_TO_INT(LEFT(sLine, pos1 - 1));
+            GVL_AlarmList.asLocation[nIndex] := MID(sLine, pos1 + 1, pos2 - pos1 - 1);
+            GVL_AlarmList.asAlarmMessage[nIndex] := RIGHT(sLine, LEN(sLine) - pos2);
+            nIndex := nIndex + 1;
+        END_IF
+    END_IF
+    IF nStep = 1 THEN
+        // continue reading
+    END_IF
+2:
+    GVL_AlarmList.iAlarmCount := nIndex - 1;
+    nStep := 3;
+3:
+    fbClose(hFile := hFile);
+    nStep := 4;
+4:
+    bBusy := FALSE;
+    bExecute := FALSE;
+    nStep := 0;
+END_CASE
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
