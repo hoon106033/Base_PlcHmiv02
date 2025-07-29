@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="St1AlarmText" Id="{b83a52e9-e5ee-4280-84ba-117b3607463d}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	sStationName : STRING := 'Unit1';
+	Error1 : STRING := 'Stop';
+	Warning : STRING := 'Over';
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

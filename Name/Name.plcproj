@@ -46,9 +46,6 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\10_Station\St1AlarmList.TcTLO">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="POUs\10_Station\Station1.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -59,6 +56,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\99_FB\fbAlarm.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\99_FB\FB_CSVReader.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
