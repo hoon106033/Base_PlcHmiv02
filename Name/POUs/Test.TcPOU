@@ -11,9 +11,7 @@ VAR
 	bTestError1: BOOL;
 	bTestWarning1: BOOL;
 	
-	
-	fb_AlarmList: FB_CSVReader;
-	arrLines      : ARRAY[0..cMaxLines-1] OF ARRAY[0..cMaxFields-1] OF T_MaxString;
+
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -41,33 +39,6 @@ END_VAR
 	bError=> bTestError1, 
 	bWarning=> bTestWarning1);
 	
-
-(*
-  FB_CSVReader: CSV 파일 읽기와 파싱을 하나의 Function Block에서 처리합니다.
-  - 파일 크기(fileSize) 조회
-  - 평균 행 길이(avgLineLength) 기준 동적 최대 행 개수 계산
-  - sep 구분자에 따라 각 행을 필드별로 분리하여 arrLines에 저장
-  - 완료 플래그(bDone), 에러 플래그(bError)
-  사용 예:
-    fbCsv(
-      sPathName     := 'C:\Temp\data.csv',
-      avgLineLength := 100,
-      sep           := ','
-    );
-    IF fbCsv.bDone THEN
-      (* fbCsv.fileSize, fbCsv.idxLine, fbCsv.arrLines 사용 *)
-    END_IF
-*)
-	
-	fb_AlarmList(
-	sPathName:= 'D:\Work\Project\ARKPLUS_Beckhoff_StandardTemplate\PLC_HMI\Standard05\CSV.csv', 
-	avgLineLength:= , 
-	sep:= ',', 
-	fileSize=> , 
-	idxLine=> , 
-	bDone=> , 
-	bError=> , 
-	arrLines=> arrLines);
 
 ]]></ST>
     </Implementation>

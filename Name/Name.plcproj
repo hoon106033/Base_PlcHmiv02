@@ -58,9 +58,6 @@
     <Compile Include="POUs\99_FB\fbAlarm.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\99_FB\FB_CSVReader.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
