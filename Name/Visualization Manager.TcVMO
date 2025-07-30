@@ -67,7 +67,7 @@
               <v>83a8537c-f862-4986-9619-9997fd9c247e</v>
             </d>
             <d n="FbProperties" t="CaseInsensitiveHashtable" />
-            <v n="FbName">"NotImportant"</v>
+            <v n="FbName">"__VisuInitInstantiation_Fb"</v>
             <v n="FbGuid">{d24342e5-0dde-4927-b684-ac01bd6421b7}</v>
           </o>
           <o n="TargetProperties" t="VisualizationTargetProperties">
@@ -604,7 +604,7 @@
               <v n="ClientSizeY">2000</v>
               <v n="Antialiasing">true</v>
               <v n="ClientOperationType" t="eDefaultInputSetting">Touchscreen</v>
-              <v n="ScaleTypeIsotropic">true</v>
+              <v n="ScaleTypeIsotropic">false</v>
               <v n="UseScalingOptionsForDialogs">true</v>
               <v n="FillBackground">true</v>
               <v n="HideCursor">false</v>

@@ -5,12 +5,9 @@
 VAR
 	tonBlink : ton;
 	tonAlarmReset : ton;
-	Test: fbAlarm;
-	bTest1: BOOL;
-	Test1: fbAlarm;
-	bTest2: BOOL;
 	i	: INT;
 	iDiffReset: INT;
+	triModelSet: R_TRIG;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -175,7 +172,7 @@ END_VAR
 			 bLpDiffrSpeed := TRUE;
 			 END_IF
 		 END_FOR		
-		 IF (iModelindex <> iDiffReset) OR bBtSaveModelData THEN
+		 IF (iModelindex <> iDiffReset) OR bBtSaveModelData OR triModelSet.Q THEN
 			 bLpDiffbType := FALSE;
 			 bLpDiffiType := FALSE;
 			 bLpDiffrPosition := FALSE;
@@ -184,7 +181,12 @@ END_VAR
 		 END_IF
 		 bLpDiffBtSave := bBtSaveModelData OR ((bLpDiffNumber OR bLpDiffName OR bLpDiffbType OR bLpDiffiType OR bLpDiffrPosition OR bLpDiffrSpeed) AND bLpBlink);
 	 END_IF
-	 
+	 triModelSet(CLK:= bModelScreen, Q=> );
+	 IF triModelSet.Q THEN
+		 FOR i := 1 TO cMaxModelNo DO
+			astInputModel[i] := astModel[i];
+		 END_FOR
+	 END_IF
 	 ]]></ST>
     </Implementation>
   </POU>
