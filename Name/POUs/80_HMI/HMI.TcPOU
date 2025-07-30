@@ -179,7 +179,10 @@ END_VAR
 			 bLpDiffrSpeed := FALSE;
 			 iDiffReset := iModelindex;
 		 END_IF
-		 bLpDiffBtSave := bBtSaveModelData OR ((bLpDiffNumber OR bLpDiffName OR bLpDiffbType OR bLpDiffiType OR bLpDiffrPosition OR bLpDiffrSpeed) AND bLpBlink);
+		 bLpSaveModelData := bBtSaveModelData OR ((bLpDiffNumber OR bLpDiffName OR bLpDiffbType OR bLpDiffiType OR bLpDiffrPosition OR bLpDiffrSpeed) AND bLpBlink);
+		 bInvisibleLeft := iModelindex = 1;
+		 bInvisibleRight := iModelindex = cMaxModelNo;
+		 bLpActivateModel := ((NOT bLpSaveModelData AND (stCurrnetModel.iNumber = 0)) AND bLpBlink) OR bBtActivateModel;
 	 END_IF
 	 triModelSet(CLK:= bModelScreen, Q=> );
 	 IF triModelSet.Q THEN

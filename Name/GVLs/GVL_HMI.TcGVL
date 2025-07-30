@@ -58,8 +58,9 @@ VAR_GLOBAL
 	bLpDiffiType		: BOOL;
 	bLpDiffrPosition	: BOOL;
 	bLpDiffrSpeed		: BOOL;
-	bLpDiffBtSave		: BOOL;
-	iModelIndex			: INT;
+	iModelIndex			: INT := 1;
+	bInvisibleLeft		: BOOL;
+	bInvisibleRight		: BOOL;
 
 // Test Bt
 	bTest				: BOOL;
