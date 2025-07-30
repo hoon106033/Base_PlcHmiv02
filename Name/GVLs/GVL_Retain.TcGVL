@@ -2,8 +2,8 @@
 <TcPlcObject Version="1.1.0.1">
   <GVL Name="GVL_Retain" Id="{26ff8b77-4fcf-4393-8b92-2db0ff69307d}">
     <Declaration><![CDATA[//{attribute 'qualified_only'}
-  {attribute 'TcPersistent'}
-VAR_GLOBAL
+ {attribute 'TcPersistent'}
+VAR_GLOBAL PERSISTENT
 //Product Data
 	astProductData 		: ARRAY[0..cMaxStationNo+1] OF DUT_ProductData;
 	abMoveShift			: ARRAY[0..cMaxStationNo] OF BOOL;

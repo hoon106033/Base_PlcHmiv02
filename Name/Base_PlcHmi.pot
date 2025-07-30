@@ -1,0 +1,1551 @@
+
+#: Content:Comments|Identifiers|Names|Strings
+#: Base_PlcHmi.PLC.Name.GVL_HMI:1
+#: Base_PlcHmi.PLC.Name.GVL_Retain:1
+#: Base_PlcHmi.PLC.Name.GVL_Status:1
+msgid "//{attribute 'qualified_only'}"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:4
+msgid "iSelectProductNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:4
+msgid "// Select Product No."
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:5
+msgid "bSaveProductData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:6
+msgid "bDeleteProductData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:7
+msgid "bDeleteRecipeData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:8
+#: Base_PlcHmi.PLC.Name.Data:5
+#: Base_PlcHmi.PLC.Name.Data:9
+msgid "bRemoveProductData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:10
+msgid "// Main"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:11
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.HMI:9
+#: Base_PlcHmi.PLC.Name.HMI:12
+#: Base_PlcHmi.PLC.Name.HMI:14
+#: Base_PlcHmi.PLC.Name.HMI:17
+#: Base_PlcHmi.PLC.Name.HMI:21
+msgid "bBtAutoMode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:12
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:38
+#: Base_PlcHmi.PLC.Name.HMI:39
+#: Base_PlcHmi.PLC.Name.HMI:40
+msgid "bBtStart"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:13
+#: Base_PlcHmi.PLC.Name.HMI:47
+#: Base_PlcHmi.PLC.Name.HMI:49
+#: Base_PlcHmi.PLC.Name.HMI:56
+msgid "bBtStop"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:14
+#: Base_PlcHmi.PLC.Name.HMI:62
+#: Base_PlcHmi.PLC.Name.HMI:64
+#: Base_PlcHmi.PLC.Name.HMI:65
+#: Base_PlcHmi.PLC.Name.HMI:66
+msgid "bBtHome"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:15
+#: Base_PlcHmi.PLC.Name.HMI:90
+#: Base_PlcHmi.PLC.Name.HMI:93
+#: Base_PlcHmi.PLC.Name.HMI:95
+msgid "bBtDoorLock"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:16
+#: Base_PlcHmi.PLC.Name.HMI:81
+#: Base_PlcHmi.PLC.Name.HMI:84
+#: Base_PlcHmi.PLC.Name.HMI:86
+msgid "bBtDoorUnlock"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:17
+#: Base_PlcHmi.PLC.Name.HMI:99
+#: Base_PlcHmi.PLC.Name.HMI:101
+msgid "bBtAlarmReset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:18
+#: Base_PlcHmi.PLC.Name.HMI:24
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:78
+#: Base_PlcHmi.PLC.Name.HMI:110
+#: Base_PlcHmi.PLC.Name.HMI:116
+#: Base_PlcHmi.PLC.Name.HMI:169
+#: Base_PlcHmi.PLC.Name.HMI:172
+msgid "bLpBlink"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:19
+#: Base_PlcHmi.PLC.Name.HMI:78
+msgid "bLpHome"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:20
+#: Base_PlcHmi.PLC.Name.HMI:110
+msgid "bLpAlarmReset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:21
+#: Base_PlcHmi.PLC.Name.HMI:24
+msgid "bLpAutoMode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:22
+#: Base_PlcHmi.PLC.Name.HMI:43
+msgid "bLpStart"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:24
+msgid "// Index"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:25
+#: Base_PlcHmi.PLC.Name.HMI:29
+#: Base_PlcHmi.PLC.Name.HMI:32
+msgid "iTextIndex"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:25
+msgid "// By 'TextList' 0= Manual, 1= Auto"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:26
+#: Base_PlcHmi.PLC.Name.HMI:120
+#: Base_PlcHmi.PLC.Name.HMI:121
+#: Base_PlcHmi.PLC.Name.HMI:122
+#: Base_PlcHmi.PLC.Name.HMI:123
+#: Base_PlcHmi.PLC.Name.HMI:124
+#: Base_PlcHmi.PLC.Name.HMI:125
+#: Base_PlcHmi.PLC.Name.fbAlarm:47
+msgid "iMainFrame"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:26
+msgid "// 0= Main, 1= Manual, 2= Setting, 3= Model, 4= Data, 5= Alarm"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:28
+msgid "// Frame Number"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:29
+#: Base_PlcHmi.PLC.Name.HMI:120
+msgid "bMainScreen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:30
+#: Base_PlcHmi.PLC.Name.HMI:121
+msgid "bManualScreen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:31
+#: Base_PlcHmi.PLC.Name.HMI:122
+msgid "bSettingScreen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:32
+#: Base_PlcHmi.PLC.Name.HMI:123
+#: Base_PlcHmi.PLC.Name.HMI:129
+#: Base_PlcHmi.PLC.Name.HMI:174
+msgid "bModelScreen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:33
+#: Base_PlcHmi.PLC.Name.HMI:124
+msgid "bDataScreen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:34
+#: Base_PlcHmi.PLC.Name.HMI:125
+msgid "bAlarmScreen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:36
+msgid "// Message Box"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:37
+#: Base_PlcHmi.PLC.Name.fbAlarm:39
+msgid "sCurrentTitle"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:38
+#: Base_PlcHmi.PLC.Name.fbAlarm:40
+msgid "sCurrentMessage"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:39
+#: Base_PlcHmi.PLC.Name.fbAlarm:41
+msgid "bCallMessageBox"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:41
+msgid "// Time"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:42
+#: Base_PlcHmi.PLC.Name.Data:21
+msgid "abStartTimeStamp"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:42
+#: Base_PlcHmi.PLC.Name.GVL_HMI:43
+#: Base_PlcHmi.PLC.Name.GVL_Retain:5
+#: Base_PlcHmi.PLC.Name.GVL_Retain:6
+#: Base_PlcHmi.PLC.Name.GVL_Retain:19
+#: Base_PlcHmi.PLC.Name.Data:6
+#: Base_PlcHmi.PLC.Name.Data:7
+#: Base_PlcHmi.PLC.Name.Data:13
+#: Base_PlcHmi.PLC.Name.Data:14
+#: Base_PlcHmi.PLC.Name.Data:17
+msgid "cMaxStationNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:43
+#: Base_PlcHmi.PLC.Name.Data:24
+msgid "abEndTimeStamp"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:44
+#: Base_PlcHmi.PLC.Name.HMI:2
+msgid "sCurrentTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:46
+#: Base_PlcHmi.PLC.Name.GVL_Retain:11
+#: Base_PlcHmi.PLC.Name.HMI:128
+msgid "// Model"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:47
+msgid "iInputModelNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:48
+#: Base_PlcHmi.PLC.Name.HMI:132
+#: Base_PlcHmi.PLC.Name.HMI:162
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bBtSaveModelData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:49
+#: Base_PlcHmi.PLC.Name.HMI:169
+#: Base_PlcHmi.PLC.Name.HMI:172
+msgid "bLpSaveModelData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:50
+#: Base_PlcHmi.PLC.Name.HMI:135
+#: Base_PlcHmi.PLC.Name.HMI:172
+msgid "bBtActivateModel"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:51
+#: Base_PlcHmi.PLC.Name.HMI:172
+msgid "bLpActivateModel"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:52
+#: Base_PlcHmi.PLC.Name.HMI:140
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bLpDiffNumber"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:53
+#: Base_PlcHmi.PLC.Name.HMI:141
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bLpDiffName"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:54
+#: Base_PlcHmi.PLC.Name.HMI:144
+#: Base_PlcHmi.PLC.Name.HMI:163
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bLpDiffbType"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:55
+#: Base_PlcHmi.PLC.Name.HMI:149
+#: Base_PlcHmi.PLC.Name.HMI:164
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bLpDiffiType"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:56
+#: Base_PlcHmi.PLC.Name.HMI:154
+#: Base_PlcHmi.PLC.Name.HMI:165
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bLpDiffrPosition"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:57
+#: Base_PlcHmi.PLC.Name.HMI:159
+#: Base_PlcHmi.PLC.Name.HMI:166
+#: Base_PlcHmi.PLC.Name.HMI:169
+msgid "bLpDiffrSpeed"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:58
+#: Base_PlcHmi.PLC.Name.HMI:133
+#: Base_PlcHmi.PLC.Name.HMI:136
+#: Base_PlcHmi.PLC.Name.HMI:139
+#: Base_PlcHmi.PLC.Name.HMI:140
+#: Base_PlcHmi.PLC.Name.HMI:141
+#: Base_PlcHmi.PLC.Name.HMI:143
+#: Base_PlcHmi.PLC.Name.HMI:148
+#: Base_PlcHmi.PLC.Name.HMI:153
+#: Base_PlcHmi.PLC.Name.HMI:158
+#: Base_PlcHmi.PLC.Name.HMI:162
+#: Base_PlcHmi.PLC.Name.HMI:167
+#: Base_PlcHmi.PLC.Name.HMI:170
+#: Base_PlcHmi.PLC.Name.HMI:171
+msgid "iModelIndex"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:59
+#: Base_PlcHmi.PLC.Name.HMI:170
+msgid "bInvisibleLeft"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:60
+#: Base_PlcHmi.PLC.Name.HMI:171
+msgid "bInvisibleRight"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:62
+msgid "// Test Bt"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_HMI:63
+#: Base_PlcHmi.PLC.Name.MAIN:5
+msgid "bTest"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:4
+msgid "//Product Data"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:5
+#: Base_PlcHmi.PLC.Name.Data:7
+#: Base_PlcHmi.PLC.Name.Data:16
+#: Base_PlcHmi.PLC.Name.Data:17
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.Data:27
+msgid "astProductData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:5
+#: Base_PlcHmi.PLC.Name.DUT_ProductData:1
+msgid "DUT_ProductData"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:6
+#: Base_PlcHmi.PLC.Name.Data:15
+#: Base_PlcHmi.PLC.Name.Data:18
+msgid "abMoveShift"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:8
+#: Base_PlcHmi.PLC.Name.Test:12
+msgid "// Alarm"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:9
+#: Base_PlcHmi.PLC.Name.fbAlarm:10
+#: Base_PlcHmi.PLC.Name.fbAlarm:17
+#: Base_PlcHmi.PLC.Name.fbAlarm:39
+#: Base_PlcHmi.PLC.Name.fbAlarm:40
+msgid "astAlarmHistory"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:9
+#: Base_PlcHmi.PLC.Name.GVL_Retain:18
+#: Base_PlcHmi.PLC.Name.fbAlarm:9
+msgid "cMaxAlarmLogCount"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:9
+#: Base_PlcHmi.PLC.Name.fbAlarm:22
+#: Base_PlcHmi.PLC.Name.DUT_AlarmInfo:1
+msgid "DUT_AlarmInfo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:9
+msgid "// 최근 100개 알람 저장"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:12
+#: Base_PlcHmi.PLC.Name.HMI:131
+#: Base_PlcHmi.PLC.Name.HMI:133
+#: Base_PlcHmi.PLC.Name.HMI:140
+#: Base_PlcHmi.PLC.Name.HMI:141
+#: Base_PlcHmi.PLC.Name.HMI:143
+#: Base_PlcHmi.PLC.Name.HMI:148
+#: Base_PlcHmi.PLC.Name.HMI:153
+#: Base_PlcHmi.PLC.Name.HMI:158
+#: Base_PlcHmi.PLC.Name.HMI:177
+msgid "astInputModel"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:12
+#: Base_PlcHmi.PLC.Name.GVL_Retain:13
+#: Base_PlcHmi.PLC.Name.GVL_Retain:22
+#: Base_PlcHmi.PLC.Name.HMI:130
+#: Base_PlcHmi.PLC.Name.HMI:139
+#: Base_PlcHmi.PLC.Name.HMI:171
+#: Base_PlcHmi.PLC.Name.HMI:176
+msgid "cMaxModelNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:12
+#: Base_PlcHmi.PLC.Name.GVL_Retain:13
+#: Base_PlcHmi.PLC.Name.GVL_Retain:14
+#: Base_PlcHmi.PLC.Name.DUT_ModelInfo:1
+msgid "dut_ModelInfo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:13
+#: Base_PlcHmi.PLC.Name.HMI:133
+#: Base_PlcHmi.PLC.Name.HMI:136
+#: Base_PlcHmi.PLC.Name.HMI:140
+#: Base_PlcHmi.PLC.Name.HMI:141
+#: Base_PlcHmi.PLC.Name.HMI:143
+#: Base_PlcHmi.PLC.Name.HMI:148
+#: Base_PlcHmi.PLC.Name.HMI:153
+#: Base_PlcHmi.PLC.Name.HMI:158
+#: Base_PlcHmi.PLC.Name.HMI:177
+msgid "astModel"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:14
+#: Base_PlcHmi.PLC.Name.HMI:136
+#: Base_PlcHmi.PLC.Name.HMI:172
+msgid "stCurrnetModel"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:20
+#: Base_PlcHmi.PLC.Name.HMI:142
+#: Base_PlcHmi.PLC.Name.HMI:147
+msgid "cMaxTypeNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:21
+#: Base_PlcHmi.PLC.Name.HMI:152
+#: Base_PlcHmi.PLC.Name.HMI:157
+msgid "cMaxPositionNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:23
+msgid "cMaxStationAlarmNo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:3
+msgid "//DataShift"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:4
+#: Base_PlcHmi.PLC.Name.Data:2
+#: Base_PlcHmi.PLC.Name.Data:21
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:24
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.HMI:2
+#: Base_PlcHmi.PLC.Name.fbAlarm:16
+msgid "fbLocalTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:4
+msgid "FB_LocalSystemTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:6
+msgid "//Status"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:7
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.HMI:8
+#: Base_PlcHmi.PLC.Name.HMI:12
+#: Base_PlcHmi.PLC.Name.HMI:13
+#: Base_PlcHmi.PLC.Name.HMI:24
+#: Base_PlcHmi.PLC.Name.HMI:27
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:39
+#: Base_PlcHmi.PLC.Name.HMI:43
+msgid "bAutoMode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:8
+#: Base_PlcHmi.PLC.Name.HMI:28
+#: Base_PlcHmi.PLC.Name.HMI:31
+#: Base_PlcHmi.PLC.Name.HMI:60
+#: Base_PlcHmi.PLC.Name.HMI:81
+#: Base_PlcHmi.PLC.Name.HMI:90
+msgid "bManualMode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:9
+#: Base_PlcHmi.PLC.Name.HMI:24
+#: Base_PlcHmi.PLC.Name.HMI:60
+#: Base_PlcHmi.PLC.Name.HMI:62
+#: Base_PlcHmi.PLC.Name.HMI:65
+#: Base_PlcHmi.PLC.Name.HMI:78
+msgid "bHomeMode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:10
+#: Base_PlcHmi.PLC.Name.HMI:5
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:52
+#: Base_PlcHmi.PLC.Name.HMI:62
+msgid "bAutoBusy"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:11
+#: Base_PlcHmi.PLC.Name.HMI:5
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:52
+#: Base_PlcHmi.PLC.Name.HMI:62
+msgid "bHomeBusy"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:12
+#: Base_PlcHmi.PLC.Name.HMI:5
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:52
+#: Base_PlcHmi.PLC.Name.HMI:62
+#: Base_PlcHmi.PLC.Name.HMI:81
+#: Base_PlcHmi.PLC.Name.HMI:90
+msgid "bManualBusy"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:13
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:110
+#: Base_PlcHmi.PLC.Name.fbAlarm:17
+#: Base_PlcHmi.PLC.Name.fbAlarm:3
+#: Base_PlcHmi.PLC.Name.fbAlarm:4
+#: Base_PlcHmi.PLC.Name.fbAlarm:23
+#: Base_PlcHmi.PLC.Name.fbAlarm:32
+#: Base_PlcHmi.PLC.Name.fbAlarm:45
+msgid "bAlarm"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:14
+#: Base_PlcHmi.PLC.Name.Test:23
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:110
+#: Base_PlcHmi.PLC.Name.fbAlarm:14
+#: Base_PlcHmi.PLC.Name.fbAlarm:24
+#: Base_PlcHmi.PLC.Name.fbAlarm:25
+#: Base_PlcHmi.PLC.Name.fbAlarm:31
+#: Base_PlcHmi.PLC.Name.fbAlarm:33
+#: Base_PlcHmi.PLC.Name.fbAlarm:37
+#: Base_PlcHmi.PLC.Name.fbAlarm:41
+msgid "bWarning"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:15
+#: Base_PlcHmi.PLC.Name.Test:7
+#: Base_PlcHmi.PLC.Name.HMI:24
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:69
+#: Base_PlcHmi.PLC.Name.HMI:75
+#: Base_PlcHmi.PLC.Name.HMI:78
+msgid "bHomeComplete"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:16
+#: Base_PlcHmi.PLC.Name.Test:2
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.HMI:60
+msgid "bSafetyDoorLocked"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:17
+#: Base_PlcHmi.PLC.Name.Test:3
+#: Base_PlcHmi.PLC.Name.HMI:20
+#: Base_PlcHmi.PLC.Name.HMI:74
+msgid "bSafetyDoorUnlocked"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:18
+#: Base_PlcHmi.PLC.Name.HMI:100
+#: Base_PlcHmi.PLC.Name.HMI:104
+#: Base_PlcHmi.PLC.Name.HMI:107
+#: Base_PlcHmi.PLC.Name.HMI:110
+#: Base_PlcHmi.PLC.Name.fbAlarm:29
+msgid "bAlarmReset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:20
+msgid "//Command"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:21
+#: Base_PlcHmi.PLC.Name.HMI:47
+#: Base_PlcHmi.PLC.Name.HMI:48
+#: Base_PlcHmi.PLC.Name.HMI:52
+#: Base_PlcHmi.PLC.Name.HMI:55
+msgid "bStopCmd"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:22
+#: Base_PlcHmi.PLC.Name.HMI:5
+#: Base_PlcHmi.PLC.Name.HMI:37
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:53
+#: Base_PlcHmi.PLC.Name.HMI:62
+msgid "bAutoCmd"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:23
+#: Base_PlcHmi.PLC.Name.Test:6
+#: Base_PlcHmi.PLC.Name.HMI:54
+#: Base_PlcHmi.PLC.Name.HMI:63
+#: Base_PlcHmi.PLC.Name.HMI:69
+#: Base_PlcHmi.PLC.Name.HMI:70
+msgid "bHomeCmd"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:24
+#: Base_PlcHmi.PLC.Name.Test:3
+#: Base_PlcHmi.PLC.Name.HMI:20
+#: Base_PlcHmi.PLC.Name.HMI:82
+#: Base_PlcHmi.PLC.Name.HMI:92
+msgid "bDoorUnlockCmd"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Status:25
+#: Base_PlcHmi.PLC.Name.Test:2
+#: Base_PlcHmi.PLC.Name.HMI:20
+#: Base_PlcHmi.PLC.Name.HMI:83
+#: Base_PlcHmi.PLC.Name.HMI:91
+msgid "bDoorLockCmd"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.MAIN:1
+msgid "MAIN"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.MAIN:1
+#: Base_PlcHmi.PLC.Name.Data:1
+msgid "Data"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.MAIN:2
+#: Base_PlcHmi.PLC.Name.HMI:1
+msgid "HMI"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.MAIN:3
+#: Base_PlcHmi.PLC.Name.Station1:1
+msgid "Station1"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.MAIN:5
+#: Base_PlcHmi.PLC.Name.Data:5
+#: Base_PlcHmi.PLC.Name.Data:9
+#: Base_PlcHmi.PLC.Name.HMI:2
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.HMI:9
+#: Base_PlcHmi.PLC.Name.HMI:12
+#: Base_PlcHmi.PLC.Name.HMI:14
+#: Base_PlcHmi.PLC.Name.HMI:17
+#: Base_PlcHmi.PLC.Name.HMI:21
+#: Base_PlcHmi.PLC.Name.HMI:24
+#: Base_PlcHmi.PLC.Name.HMI:29
+#: Base_PlcHmi.PLC.Name.HMI:32
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:38
+#: Base_PlcHmi.PLC.Name.HMI:39
+#: Base_PlcHmi.PLC.Name.HMI:40
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:47
+#: Base_PlcHmi.PLC.Name.HMI:49
+#: Base_PlcHmi.PLC.Name.HMI:56
+#: Base_PlcHmi.PLC.Name.HMI:62
+#: Base_PlcHmi.PLC.Name.HMI:64
+#: Base_PlcHmi.PLC.Name.HMI:65
+#: Base_PlcHmi.PLC.Name.HMI:66
+#: Base_PlcHmi.PLC.Name.HMI:78
+#: Base_PlcHmi.PLC.Name.HMI:81
+#: Base_PlcHmi.PLC.Name.HMI:84
+#: Base_PlcHmi.PLC.Name.HMI:86
+#: Base_PlcHmi.PLC.Name.HMI:90
+#: Base_PlcHmi.PLC.Name.HMI:93
+#: Base_PlcHmi.PLC.Name.HMI:95
+#: Base_PlcHmi.PLC.Name.HMI:99
+#: Base_PlcHmi.PLC.Name.HMI:101
+#: Base_PlcHmi.PLC.Name.HMI:110
+#: Base_PlcHmi.PLC.Name.HMI:116
+#: Base_PlcHmi.PLC.Name.HMI:120
+#: Base_PlcHmi.PLC.Name.HMI:121
+#: Base_PlcHmi.PLC.Name.HMI:122
+#: Base_PlcHmi.PLC.Name.HMI:123
+#: Base_PlcHmi.PLC.Name.HMI:124
+#: Base_PlcHmi.PLC.Name.HMI:125
+#: Base_PlcHmi.PLC.Name.GVL_HMI:1
+msgid "GVL_HMI"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.MAIN:6
+#: Base_PlcHmi.PLC.Name.Test:1
+msgid "Test"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:4
+#: Base_PlcHmi.PLC.Name.Test:13
+msgid "fbTestAlarm1"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:4
+#: Base_PlcHmi.PLC.Name.fbAlarm:1
+msgid "fbalarm"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:6
+#: Base_PlcHmi.PLC.Name.Test:14
+msgid "bTestSelectWarning"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:7
+#: Base_PlcHmi.PLC.Name.Test:17
+msgid "bTestAlarmCondition"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:8
+#: Base_PlcHmi.PLC.Name.Test:22
+msgid "bTestError1"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:9
+#: Base_PlcHmi.PLC.Name.Test:23
+msgid "bTestWarning1"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:1
+msgid "// Door"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:2
+#: Base_PlcHmi.PLC.Name.Test:3
+#: Base_PlcHmi.PLC.Name.Test:6
+#: Base_PlcHmi.PLC.Name.Test:7
+#: Base_PlcHmi.PLC.Name.Data:2
+#: Base_PlcHmi.PLC.Name.Data:21
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:24
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.HMI:2
+#: Base_PlcHmi.PLC.Name.HMI:5
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.HMI:8
+#: Base_PlcHmi.PLC.Name.HMI:12
+#: Base_PlcHmi.PLC.Name.HMI:13
+#: Base_PlcHmi.PLC.Name.HMI:20
+#: Base_PlcHmi.PLC.Name.HMI:24
+#: Base_PlcHmi.PLC.Name.HMI:27
+#: Base_PlcHmi.PLC.Name.HMI:28
+#: Base_PlcHmi.PLC.Name.HMI:31
+#: Base_PlcHmi.PLC.Name.HMI:36
+#: Base_PlcHmi.PLC.Name.HMI:37
+#: Base_PlcHmi.PLC.Name.HMI:39
+#: Base_PlcHmi.PLC.Name.HMI:43
+#: Base_PlcHmi.PLC.Name.HMI:47
+#: Base_PlcHmi.PLC.Name.HMI:48
+#: Base_PlcHmi.PLC.Name.HMI:52
+#: Base_PlcHmi.PLC.Name.HMI:53
+#: Base_PlcHmi.PLC.Name.HMI:54
+#: Base_PlcHmi.PLC.Name.HMI:55
+#: Base_PlcHmi.PLC.Name.HMI:60
+#: Base_PlcHmi.PLC.Name.HMI:62
+#: Base_PlcHmi.PLC.Name.HMI:63
+#: Base_PlcHmi.PLC.Name.HMI:65
+#: Base_PlcHmi.PLC.Name.HMI:69
+#: Base_PlcHmi.PLC.Name.HMI:70
+#: Base_PlcHmi.PLC.Name.HMI:74
+#: Base_PlcHmi.PLC.Name.HMI:75
+#: Base_PlcHmi.PLC.Name.HMI:78
+#: Base_PlcHmi.PLC.Name.HMI:81
+#: Base_PlcHmi.PLC.Name.HMI:82
+#: Base_PlcHmi.PLC.Name.HMI:83
+#: Base_PlcHmi.PLC.Name.HMI:90
+#: Base_PlcHmi.PLC.Name.HMI:91
+#: Base_PlcHmi.PLC.Name.HMI:92
+#: Base_PlcHmi.PLC.Name.HMI:100
+#: Base_PlcHmi.PLC.Name.HMI:104
+#: Base_PlcHmi.PLC.Name.HMI:107
+#: Base_PlcHmi.PLC.Name.HMI:110
+#: Base_PlcHmi.PLC.Name.fbAlarm:16
+#: Base_PlcHmi.PLC.Name.fbAlarm:23
+#: Base_PlcHmi.PLC.Name.fbAlarm:25
+#: Base_PlcHmi.PLC.Name.fbAlarm:32
+#: Base_PlcHmi.PLC.Name.fbAlarm:33
+#: Base_PlcHmi.PLC.Name.fbAlarm:37
+#: Base_PlcHmi.PLC.Name.fbAlarm:41
+#: Base_PlcHmi.PLC.Name.fbAlarm:45
+#: Base_PlcHmi.PLC.Name.GVL_Status:1
+msgid "GVL_Status"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:5
+#: Base_PlcHmi.PLC.Name.HMI:59
+msgid "// home"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:14
+#: Base_PlcHmi.PLC.Name.fbAlarm:3
+#: Base_PlcHmi.PLC.Name.fbAlarm:22
+#: Base_PlcHmi.PLC.Name.fbAlarm:23
+#: Base_PlcHmi.PLC.Name.fbAlarm:24
+#: Base_PlcHmi.PLC.Name.fbAlarm:25
+msgid "bSelectWarning"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:15
+#: Base_PlcHmi.PLC.Name.fbAlarm:4
+msgid "tDelayTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:16
+#: Base_PlcHmi.PLC.Name.fbAlarm:5
+#: Base_PlcHmi.PLC.Name.fbAlarm:3
+msgid "bCommand"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:17
+#: Base_PlcHmi.PLC.Name.fbAlarm:6
+#: Base_PlcHmi.PLC.Name.fbAlarm:3
+msgid "bAlarmCondition"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:18
+#: Base_PlcHmi.PLC.Name.fbAlarm:7
+#: Base_PlcHmi.PLC.Name.fbAlarm:12
+msgid "iAlarmCode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:19
+#: Base_PlcHmi.PLC.Name.fbAlarm:8
+#: Base_PlcHmi.PLC.Name.fbAlarm:13
+msgid "iPriority"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:20
+#: Base_PlcHmi.PLC.Name.fbAlarm:9
+#: Base_PlcHmi.PLC.Name.fbAlarm:14
+#: Base_PlcHmi.PLC.Name.fbAlarm:40
+msgid "sAlarmMessage"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:20
+msgid "'hello'"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:21
+#: Base_PlcHmi.PLC.Name.fbAlarm:10
+#: Base_PlcHmi.PLC.Name.fbAlarm:15
+#: Base_PlcHmi.PLC.Name.fbAlarm:39
+msgid "sLocation"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:21
+msgid "'office'"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Test:22
+#: Base_PlcHmi.PLC.Name.fbAlarm:13
+#: Base_PlcHmi.PLC.Name.fbAlarm:22
+#: Base_PlcHmi.PLC.Name.fbAlarm:30
+msgid "bError"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:3
+#: Base_PlcHmi.PLC.Name.Data:6
+#: Base_PlcHmi.PLC.Name.Data:7
+#: Base_PlcHmi.PLC.Name.Data:13
+#: Base_PlcHmi.PLC.Name.Data:14
+#: Base_PlcHmi.PLC.Name.Data:15
+#: Base_PlcHmi.PLC.Name.Data:16
+#: Base_PlcHmi.PLC.Name.Data:17
+#: Base_PlcHmi.PLC.Name.Data:18
+#: Base_PlcHmi.PLC.Name.Data:21
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:24
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.Data:27
+#: Base_PlcHmi.PLC.Name.HMI:5
+#: Base_PlcHmi.PLC.Name.HMI:130
+#: Base_PlcHmi.PLC.Name.HMI:131
+#: Base_PlcHmi.PLC.Name.HMI:142
+#: Base_PlcHmi.PLC.Name.HMI:143
+#: Base_PlcHmi.PLC.Name.HMI:147
+#: Base_PlcHmi.PLC.Name.HMI:148
+#: Base_PlcHmi.PLC.Name.HMI:152
+#: Base_PlcHmi.PLC.Name.HMI:153
+#: Base_PlcHmi.PLC.Name.HMI:157
+#: Base_PlcHmi.PLC.Name.HMI:158
+#: Base_PlcHmi.PLC.Name.HMI:176
+#: Base_PlcHmi.PLC.Name.HMI:177
+#: Base_PlcHmi.PLC.Name.fbAlarm:21
+#: Base_PlcHmi.PLC.Name.fbAlarm:9
+#: Base_PlcHmi.PLC.Name.fbAlarm:10
+msgid "i"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:3
+msgid "//loop index"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:1
+msgid "// Local Time"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:2
+msgid "bEnable"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:2
+#: Base_PlcHmi.PLC.Name.HMI:1
+msgid "// Current Time"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:4
+msgid "//Remove Total Product Data"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:12
+msgid "//Data Shift"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:14
+msgid "// 범위 체크 추가"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:17
+msgid "// Delete Data before Station"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:21
+#: Base_PlcHmi.PLC.Name.Data:24
+msgid "bValid"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:27
+msgid "dtStartTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.fbAlarm:16
+msgid "SYSTEMTIME_TO_DT"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:22
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.HMI:2
+#: Base_PlcHmi.PLC.Name.fbAlarm:16
+msgid "systemTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:25
+#: Base_PlcHmi.PLC.Name.Data:27
+msgid "dtEndTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Data:27
+msgid "tProcessTime"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:3
+#: Base_PlcHmi.PLC.Name.HMI:113
+#: Base_PlcHmi.PLC.Name.HMI:115
+msgid "tonBlink"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:3
+#: Base_PlcHmi.PLC.Name.HMI:4
+#: Base_PlcHmi.PLC.Name.fbAlarm:23
+msgid "ton"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:4
+#: Base_PlcHmi.PLC.Name.HMI:104
+#: Base_PlcHmi.PLC.Name.HMI:106
+msgid "tonAlarmReset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:6
+#: Base_PlcHmi.PLC.Name.HMI:162
+#: Base_PlcHmi.PLC.Name.HMI:167
+msgid "iDiffReset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.HMI:162
+#: Base_PlcHmi.PLC.Name.HMI:174
+#: Base_PlcHmi.PLC.Name.HMI:175
+msgid "triModelSet"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:7
+#: Base_PlcHmi.PLC.Name.fbAlarm:18
+#: Base_PlcHmi.PLC.Name.fbAlarm:19
+#: Base_PlcHmi.PLC.Name.fbAlarm:20
+msgid "R_TRIG"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:2
+msgid "SYSTEMTIME_TO_STRING"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:4
+msgid "// Select Auto Mode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:6
+msgid "//Turn On Auto Mode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:11
+msgid "//Turn Off Auto Mode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:26
+msgid "// Select Manual Mode"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:35
+msgid "// Auto Running"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:46
+msgid "// Stop"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:73
+msgid "// bHomeComplete Reset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:80
+msgid "// Door Unlock"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:89
+msgid "// Door Lock"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:98
+#: Base_PlcHmi.PLC.Name.fbAlarm:28
+msgid "// Alarm Reset"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:104
+#: Base_PlcHmi.PLC.Name.HMI:113
+#: Base_PlcHmi.PLC.Name.fbAlarm:4
+msgid "in"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:104
+#: Base_PlcHmi.PLC.Name.HMI:113
+#: Base_PlcHmi.PLC.Name.fbAlarm:4
+msgid "pt"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:106
+#: Base_PlcHmi.PLC.Name.HMI:113
+#: Base_PlcHmi.PLC.Name.HMI:115
+#: Base_PlcHmi.PLC.Name.HMI:162
+#: Base_PlcHmi.PLC.Name.HMI:174
+#: Base_PlcHmi.PLC.Name.HMI:175
+#: Base_PlcHmi.PLC.Name.fbAlarm:7
+#: Base_PlcHmi.PLC.Name.fbAlarm:8
+#: Base_PlcHmi.PLC.Name.fbAlarm:21
+#: Base_PlcHmi.PLC.Name.fbAlarm:38
+#: Base_PlcHmi.PLC.Name.fbAlarm:46
+msgid "Q"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:112
+msgid "// blink"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:119
+msgid "// Current Screen"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:131
+#: Base_PlcHmi.PLC.Name.HMI:140
+#: Base_PlcHmi.PLC.Name.HMI:172
+msgid "iNumber"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:141
+msgid "sName"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:143
+msgid "abType"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:148
+msgid "aiType"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:153
+msgid "arPosition"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:158
+msgid "arSpeed"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.HMI:174
+#: Base_PlcHmi.PLC.Name.fbAlarm:7
+#: Base_PlcHmi.PLC.Name.fbAlarm:37
+#: Base_PlcHmi.PLC.Name.fbAlarm:45
+msgid "CLK"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:1
+msgid "//"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:18
+#: Base_PlcHmi.PLC.Name.fbAlarm:7
+#: Base_PlcHmi.PLC.Name.fbAlarm:8
+msgid "triAlarm"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:19
+#: Base_PlcHmi.PLC.Name.fbAlarm:37
+#: Base_PlcHmi.PLC.Name.fbAlarm:38
+msgid "triWarning"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:20
+#: Base_PlcHmi.PLC.Name.fbAlarm:45
+#: Base_PlcHmi.PLC.Name.fbAlarm:46
+msgid "triError"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:22
+#: Base_PlcHmi.PLC.Name.fbAlarm:12
+#: Base_PlcHmi.PLC.Name.fbAlarm:13
+#: Base_PlcHmi.PLC.Name.fbAlarm:14
+#: Base_PlcHmi.PLC.Name.fbAlarm:15
+#: Base_PlcHmi.PLC.Name.fbAlarm:16
+#: Base_PlcHmi.PLC.Name.fbAlarm:17
+msgid "stAlarmInfo"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:23
+#: Base_PlcHmi.PLC.Name.fbAlarm:4
+#: Base_PlcHmi.PLC.Name.fbAlarm:7
+#: Base_PlcHmi.PLC.Name.fbAlarm:21
+msgid "tonDelayTimer"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:2
+msgid "// Alarm Input"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:6
+msgid "// Alarm History"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:16
+msgid "tTimeStamp"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:20
+msgid "// Alarm Output"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:36
+msgid "// Call Message Box"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.fbAlarm:44
+msgid "// Change Main Frame to Alarm"
+msgstr ""
+
+
+#: Base_PlcHmi:1
+msgid "Base_PlcHmi"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC:1
+msgid "PLC"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name:1
+msgid "Name"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Library_Manager:1
+msgid "Library Manager"
+msgstr ""
+
+
+#: DUTs:1
+msgid "DUTs"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GlobalTextList:1
+msgid "GlobalTextList"
+msgstr ""
+
+
+#: GVLs:1
+msgid "GVLs"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.PlcTask:1
+msgid "PlcTask"
+msgstr ""
+
+
+#: POUs:1
+msgid "POUs"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Visualization_Manager:1
+msgid "Visualization Manager"
+msgstr ""
+
+
+#: VISUs:1
+msgid "VISUs"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Name.tmc:1
+msgid "Name.tmc"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.GVL_Retain:1
+msgid "GVL_Retain"
+msgstr ""
+
+
+#: 10_Station:1
+msgid "10_Station"
+msgstr ""
+
+
+#: 70_Data:1
+msgid "70_Data"
+msgstr ""
+
+
+#: 80_HMI:1
+msgid "80_HMI"
+msgstr ""
+
+
+#: 99_FB:1
+msgid "99_FB"
+msgstr ""
+
+
+#: 01_Interface:1
+msgid "01_Interface"
+msgstr ""
+
+
+#: 00_IO:1
+msgid "00_IO"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.ImagePool:1
+msgid "ImagePool"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.TextList:1
+msgid "TextList"
+msgstr ""
+
+
+#: 03_SideFrame:1
+msgid "03_SideFrame"
+msgstr ""
+
+
+#: 02_MainFrame:1
+msgid "02_MainFrame"
+msgstr ""
+
+
+#: 01_Page:1
+msgid "01_Page"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.LowerBar:1
+msgid "LowerBar"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.SideBar:1
+msgid "SideBar"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.UpperBar:1
+msgid "UpperBar"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Alarm:1
+msgid "Alarm"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Setting:1
+msgid "Setting"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Manual:1
+msgid "Manual"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Model:1
+msgid "Model"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.BasePage:1
+msgid "BasePage"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.Visualization_Manager.TargetVisu:1
+msgid "TargetVisu"
+msgstr ""
+
+
+#: Base_PlcHmi.PLC.Name.VISU_TASK:1
+msgid "VISU_TASK"
+msgstr ""
+
+
+
