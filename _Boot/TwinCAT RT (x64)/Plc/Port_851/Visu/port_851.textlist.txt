@@ -1,0 +1,4 @@
+Id;Default;Korea;English
+0;Manual;수동;Manual
+1;Auto;자동;Auto
+;;;
